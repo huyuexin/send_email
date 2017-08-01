@@ -12,8 +12,8 @@ import xlrd
 #发件人邮箱账号q
 my_sender=input('input your qq email:')
 my_password=input('input your password:')
-my_smtp=my_sender.replace('www','smtp')
-
+smtp_var1=my_sender.split('@')
+my_smtp='smtp.'+smtp_var1[1]
 #收件人称呼、邮箱地址、邮箱内容、附件名字
 file_name = 'mail.xls'
 
